@@ -26,3 +26,4 @@ jobs:
         email: ${{ secrets.EMAIL }}
         build_dir: dist
         branch: gh-pages
+        cname: ntpu-graduate.littlechin.tw
