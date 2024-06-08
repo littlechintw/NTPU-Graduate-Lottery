@@ -53,10 +53,10 @@ const closeOverlay2 = () => {
       <button
         :class="{ 'not-started': lotteryStatus[prize] === '未抽獎', 'in-progress': lotteryStatus[prize] === '抽獎中', 'finished': lotteryStatus[prize] === '已抽獎' }"
         :style="{ 'background-color': lotteryStatus[prize] === '未抽獎' ? 'red' : 'green' }"
-        :disabled="lotteryStatus[prize] !== '未抽獎'" @click="startLottery(prize)" style="zoom: 2">
+        :disabled="lotteryStatus[prize] !== '未抽獎'" @click="startLottery(prize)" style="zoom: 3">
         {{ prize }} 抽獎
       </button>
-      <span class="status" v-if="lotteryStatus[prize] === '抽獎中'" style="zoom: 2"> 抽獎中...</span>
+      <span class="status" v-if="lotteryStatus[prize] === '抽獎中'" style="zoom: 3"> 抽獎中...</span>
     </div>
     <button @click="showWinners">顯示中獎名單</button>
   </div>
